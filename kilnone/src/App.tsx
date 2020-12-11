@@ -1,10 +1,11 @@
 import React from 'react';
-import { SplashScreen } from './components';
+import { SplashScreen, WhatWeOffer  } from './components';
 
 function App() {
   return (
     <div className="App">
       <SplashScreen />
+      <WhatWeOffer />
     </div>
   );
 }
