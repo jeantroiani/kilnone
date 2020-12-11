@@ -1,14 +1,12 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 export const SplashScreen = () => {
-    const p = {
-        color: "red"
-    }
     return (
-        <>
-            <h1>Kiln.one</h1>
-            <p style={p}>Crafting your ideas into the web</p>
-            <p>We are a multidisciplinary group of designers and programmers specialized in modern website design and brand development for your company, service or product</p>
+        <React.Fragment>
+            <h1 className={styles.error}>Kiln.one</h1>
+            <p>Crafting your ideas into the web</p>
+            <p >We are a multidisciplinary group of designers and programmers specialized in modern website design and brand development for your company, service or product</p>
             <h1>What We Offer</h1>
             <p>Kiln Studio is located in London, UK providing its customers branding, website design, web apps, illustrations and documentation among other services.</p>
             <p>We strive to produce engaging designs and web experiences by working together with our clients through constant communication and understanding of their needs.</p>
@@ -21,6 +19,6 @@ export const SplashScreen = () => {
             <h1>Contact Us</h1>
 
 
-        </>
+        </React.Fragment>
     );
 }
