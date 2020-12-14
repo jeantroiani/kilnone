@@ -1,10 +1,11 @@
 import React from 'react';
-import { SplashScreen, WhatWeOffer, ContactUs  } from './components';
+
+import { Home, WhatWeOffer, ContactUs  } from './components';
 
 function App() {
   return (
     <div className="App">
-      <SplashScreen />
+      <Home />
       <WhatWeOffer />
       <ContactUs />
     </div>

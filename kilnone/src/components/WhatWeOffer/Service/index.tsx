@@ -1,5 +1,5 @@
 import React from 'react';
-import globlaStyles from '../../Styles/styles.module.scss';
+import globalStyles from '../../Styles/styles.module.scss';
 import { Button } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -17,11 +17,11 @@ export const Service = (props: ServiceProps) => {
     return (
         <Card className={styles.container}> 
             <CardContent>
-                <h1 className={globlaStyles.sectionMainTitle}>{title}</h1>
+                <h1 className={globalStyles.sectionMainTitle}>{title}</h1>
                 <p>{text}</p>
             </CardContent>
             <CardActions>
-            <Button className={globlaStyles.button} onClick={action} color="secondary">More about this</Button>
+            <Button variant="contained" className={globalStyles.button} onClick={action} >More about this</Button>
             </CardActions>
         </Card>
     );
