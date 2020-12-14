@@ -7,7 +7,7 @@ import { ContactUsForm } from './ContactUsForm';
 export const Home = () => {
     return (
         <>
-        <div className={styles.container}>
+        <div className={stylNo te estoy hablando, estoy en mute para no despertar a tus criases.container}>
             <div className={styles.informationBackground}>
                 <div className={styles.contentContainer}>
                     <h1 className={styles.mainTitle}>KILN<span className={globalStyles.sectionMainTitle}>.one</span></h1>

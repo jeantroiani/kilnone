@@ -1,30 +1,24 @@
 
 @import '../Styles/styles.module.scss';
 
+.container {
+
+}
+
 .informationBackground {
-  background-color: #DE384A;
   width: 75%;
   height: 50%;
   padding: 60px 0 0 120px;
-  &::after{
-    content: "";
-    height: 100%;
-    display: inline-block;
-    position:relative;
-    background-image: url(./homeBackground.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.mainTitle {
-  @extend .sectionMainTitleBold;
+  height: 110vh;
+  background-image: url(./homeBackground.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contentContainer {
   width: 42%;
 }
-
-.container {
-  height: 100vh;
+.mainTitle {
+  @extend .sectionMainTitleBold;
 }
+
