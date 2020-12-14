@@ -1,0 +1,15 @@
+
+@import '../../Styles/styles.module.scss';
+
+
+.mainTitle {
+  @extend .sectionMainTitleBold;
+}
+
+.formContainer {
+  display: flex;
+}
+
+.button {
+  background-color: #E1D351;
+}
