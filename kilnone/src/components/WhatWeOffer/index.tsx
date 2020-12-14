@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import globlaStyles from '../Styles/styles.module.scss';
+import globalStyles from '../Styles/styles.module.scss';
 import { Service } from './Service';
 
 interface IService {
@@ -32,7 +32,7 @@ export const WhatWeOffer = () => {
 
     return (
         <section > 
-            <h1 className={globlaStyles.sectionMainTitle}>What We Offer</h1>
+            <h1 className={globalStyles.sectionMainTitle}>What We Offer</h1>
             <p>Kiln Studio is located in London, UK providing its customers branding, website design, web apps, illustrations and documentation among other services.</p>
             <p>We strive to produce engaging designs and web experiences by working together with our clients through constant communication and understanding of their needs.</p>
             <p>We pride ourself in following all our projects through from the moment we begin a relationship with our clients up to the delivery of the final product.</p>
