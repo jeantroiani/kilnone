@@ -1,0 +1,26 @@
+.contactUsBackground {
+  background-image: url(./contactUsBackground.svg);
+  background-position: bottom left  ;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.sectionMainTitle {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 42px;
+  padding: 120px 0 0 120px;
+  color: whitesmoke;
+  
+}
+
+.contactUsForm {
+  width: 300px;
+  margin:0 0 0 120px;
+  padding: 15px;
+  background: rgb(255, 255, 255);
+  border: 1px solid gray;
+  border-radius: 15px;
+
+}
