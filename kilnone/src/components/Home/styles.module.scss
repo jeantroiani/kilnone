@@ -1,24 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;700&family=Open+Sans&display=swap');
 
-@import '../Styles/styles.module.scss';
-
-.container {
-
-}
-
-.informationBackground {
-  width: 75%;
-  height: 50%;
+.homeBackground {
   padding: 60px 0 0 120px;
-  height: 110vh;
-  background-image: url(./homeBackground.svg);
+  height: 100vw;
+  background-image: url(../Assets/home-background.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.contentContainer {
-  width: 42%;
+.homeImage{
+  position: absolute;
+  width: 25%;
+  left: 65%;
+  top: 35%;
 }
-.mainTitle {
-  @extend .sectionMainTitleBold;
+
+.logoKiln{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.logoOne{
+  font-weight: 300;
+  font-size: 90px;
+}
+
+.kilnMoto{  
+  width: 45%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+  line-height: 105.68%;
+  color: #FFFFFF;
+}
+
+.kilnGreeting{
+  width: 45%;
+  font-family: Open Sans;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  color: #26334A;
 }
 
