@@ -9,7 +9,7 @@ export const ContactUsForm = () => {
             <form className={styles.formContainer} noValidate autoComplete="off">
                 <TextField size="small" id="filled-basic" label="Contact Us" variant="filled" />
                 <Button size="small" className={styles.button}>Submit</Button>
-            </form>
+             </form>
         </>
     );
 }
