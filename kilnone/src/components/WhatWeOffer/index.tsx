@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import globalStyles from '../Styles/styles.module.scss';
+import globalStyles from '../styles/styles.module.scss';
 import { Service } from './Service';
 
 interface IService {
