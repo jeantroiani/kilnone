@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;700&family=Open+Sans&display=swap');
+@import '../Styles/colors.module.scss';
+
 .error {
   background-color: red;
+}
+
+.mainTitle {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 42px;
+  color: whitesmoke;
+}
+
+.mainContent {
+  font-family: 'open sans', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  color: whitesmoke;
+}
+
+.largeDarkSans {
+  font-family: 'open sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: $darkBlue;
 }
 
 .sectionMainTitle {
@@ -7,10 +34,28 @@
   font-weight: 400;
   margin-bottom: 42px;
   color: whitesmoke;
+  &::before {
+    content: "";
+    width: 120px;
+    height: 2px;
+    position: relative;
+    display: block;
+    background-color: #39A1FF;
+    margin-bottom: 12px;
+  }
 }
 
 .sectionContent {
   font-size: 24px;
   margin-bottom: 42px;
   color: whitesmoke;
+}
+
+.section {
+  padding: 0 20px 0 120px;
+}
+
+//todo: find a way to remove this using CSS reset, CRA has some information about it.
+p, h1, h2, h3 {
+  margin: 0;
 }
