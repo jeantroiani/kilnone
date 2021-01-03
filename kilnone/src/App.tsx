@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { Home, WhatWeOffer, ContactUs  } from './components';
+import { Home, WhatWeOffer, HowWeDoIt, ContactUs  } from './components';
 
 function App() {
   return (
     <div className="App">
       <Home />
       <WhatWeOffer />
+      <HowWeDoIt />
       <ContactUs />
     </div>
   );

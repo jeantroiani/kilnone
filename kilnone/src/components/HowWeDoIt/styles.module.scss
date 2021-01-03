@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;700&family=Open+Sans&display=swap');
+
+.howWeDoItBackground {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  background: #061C43;
+}
+
+.howWeDoItImage{
+  position: absolute ;
+  width: 40%;
+  top: 15%;
+  right: 0px;
+}
+
+.sectionHeader{
+  position: absolute;
+  top: 60px;
+  left: 120px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 57px;
+  color: #39A1FF;
+}
+
+.sectionContent{
+  position: absolute;
+  width: 45%;
+  top: 25%;
+  left: 120px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
