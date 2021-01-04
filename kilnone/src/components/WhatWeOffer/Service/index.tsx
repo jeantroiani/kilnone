@@ -1,5 +1,5 @@
 import React from 'react';
-import globalStyles from '../../styles/styles.module.scss';
+import globalStyles from '../../Styles/styles.module.scss';
 import { Button } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';

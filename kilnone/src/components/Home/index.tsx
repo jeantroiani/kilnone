@@ -1,5 +1,4 @@
 import styles from './styles.module.scss';
-import img from '../Assets/home-Image.png';
 
 export const Home = () => {
     return (

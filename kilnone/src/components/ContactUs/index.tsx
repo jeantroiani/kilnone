@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormControl, InputLabel, Input,Button } from "@material-ui/core";
 import styles from './styles.module.scss';
-import globalStyles from '../styles/styles.module.scss';
+import globalStyles from '../Styles/styles.module.scss';
 
 export const ContactUs = () => {
 
