@@ -6,7 +6,7 @@
 }
 
 .mainTitle {
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Mplus 1p', sans-serif;
   font-size: 80px;
   font-weight: 600;
   margin-bottom: 42px;
@@ -37,12 +37,17 @@
   &::before {
     content: "";
     width: 120px;
-    height: 2px;
+    height: 4px;
     position: relative;
     display: block;
-    background-color: #39A1FF;
+    background-color: $lightBlue;
     margin-bottom: 12px;
   }
+}
+
+.sectionMainTitleDark {
+  @extend .sectionMainTitle;
+  color: $darkBlue;
 }
 
 .sectionContent {
@@ -51,8 +56,33 @@
   color: whitesmoke;
 }
 
+.sectionContentDarkLight {
+  @extend .sectionContent;
+  font-weight: 200;
+  color: $darkBlue;
+}
+
+.sectionContentMediumDarkNormal {
+  @extend .sectionContent;
+  font-family: 'Mplus 1p', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $darkBlue;
+}
+
 .section {
-  padding: 0 20px 0 120px;
+  padding: 120px 240px;
+  height: 100vh;
+  max-height: 1024px;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 22px;
+  color: whitesmoke;
+  background-color: $darkBlue;
+  padding: 8px 20px;
 }
 
 //todo: find a way to remove this using CSS reset, CRA has some information about it.
