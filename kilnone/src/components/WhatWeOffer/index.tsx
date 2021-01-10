@@ -4,6 +4,7 @@ import globalStyles from '../styles/styles.module.scss';
 import { Service, ServiceProps } from './Service';
 import person from "./app.png";
 import bench from "./bench.png";
+import branding from "./branding.png";
 
 
 const services : Array<ServiceProps> = [
@@ -25,8 +26,8 @@ const services : Array<ServiceProps> = [
         action: (event: any) => console.log(event),
         title: "Branding",
         text: "Need a complete solution to your image? Our team can appropriately develop an entire concept to suit your needs.",
-        imageUrl: person,
-        imageAlt: "Person looking at yellow board with an iPad"
+        imageUrl: branding,
+        imageAlt: "Person working on a computer."
     }
 ];
     

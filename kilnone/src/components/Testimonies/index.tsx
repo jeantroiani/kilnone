@@ -25,8 +25,8 @@ const services : Array<TestimonyProps> = [
         action: (event: any) => console.log(event),
         title: "Branding",
         text: "Need a complete solution to your image? Our team can appropriately develop an entire concept to suit your needs.",
-        imageUrl: person,
-        imageAlt: "Person looking at yellow board with an iPad"
+        imageUrl: bench,
+        imageAlt: "Developer working on a "
     }
 ];
     
