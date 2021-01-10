@@ -26,7 +26,7 @@ const services : Array<TestimonyProps> = [
         title: "Branding",
         text: "Need a complete solution to your image? Our team can appropriately develop an entire concept to suit your needs.",
         imageUrl: bench,
-        imageAlt: "Developer working on a "
+        imageAlt: "Developer working on a computer"
     }
 ];
     
