@@ -1,8 +1,5 @@
 import React from 'react';
 import globalStyles from '../../styles/styles.module.scss';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Card from '@material-ui/core/Card';
 import styles from './styles.module.scss';
 
 export interface ServiceProps {
@@ -16,15 +13,15 @@ export interface ServiceProps {
 export const Service = (props: ServiceProps) => {
     const {action, title, text, imageUrl, imageAlt} = props;
     return (
-        <Card className={styles.container}>
+        <li className={styles.container}>
             <img className={styles.image} src={imageUrl} alt={imageAlt}/>
-            <CardContent className={styles.cardContent}>
+            <div className={styles.cardContent}>
                 <h1 className={styles.title}>{title}</h1>
                 <p className={globalStyles.sectionContentMediumDarkLight}>{text}</p>
-            </CardContent>
-            <CardActions className={styles.cardAction}>
-            <button className={globalStyles.button} onClick={action} >More about this</button>
-            </CardActions>
-        </Card>
+            </div>
+            <div className={styles.cardAction}>
+                <button className={globalStyles.button} onClick={action} >More about this</button>
+            </div>
+        </li>
     );
 }
