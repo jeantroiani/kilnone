@@ -10,7 +10,7 @@
   font-size: 80px;
   font-weight: 600;
   margin-bottom: 42px;
-  color: whitesmoke;
+  color: $darkBlue;
 }
 
 .mainContent {
@@ -18,7 +18,7 @@
   font-size: 42px;
   font-weight: 400;
   margin-bottom: 32px;
-  color: whitesmoke;
+  color: $darkBlue;
 }
 
 .largeDarkSans {
@@ -27,6 +27,13 @@
   font-weight: 400;
   margin-bottom: 16px;
   color: $darkBlue;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}
+
+.largeLightSans {
+  @extend .largeDarkSans;
+  color: whitesmoke;
 }
 
 .sectionMainTitle {
@@ -50,28 +57,49 @@
   color: $darkBlue;
 }
 
+.sectionMainTitleBlue {
+  @extend .sectionMainTitle;
+  color: $lightBlue;
+}
+
+
 .sectionContent {
   font-size: 24px;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
   color: whitesmoke;
 }
+
 
 .sectionContentDarkLight {
   @extend .sectionContent;
   font-weight: 200;
   color: $darkBlue;
+  
 }
 
 .sectionContentMediumDarkNormal {
   @extend .sectionContent;
+  line-height: 26px;
   font-family: 'Mplus 1p', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: $darkBlue;
+  letter-spacing: 0.05em;
+}
+
+.sectionContentMediumDarkLight {
+  @extend .sectionContentMediumDarkNormal;
+  font-weight: 200;
 }
 
 .section {
   padding: 120px 240px;
+  height: 100vh;
+  max-height: 1024px;
+}
+
+.sectionFullScreen {
+  padding: 0;
   height: 100vh;
   max-height: 1024px;
 }
@@ -83,6 +111,11 @@
   color: whitesmoke;
   background-color: $darkBlue;
   padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color:  lighten($darkBlue, 16%);
+  }
 }
 
 //todo: find a way to remove this using CSS reset, CRA has some information about it.

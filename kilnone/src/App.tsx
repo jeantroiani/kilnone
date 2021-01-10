@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Home, WhatWeOffer, HowWeDoIt, ContactUs  } from './components';
+import { Home, WhatWeOffer, HowWeDoIt, ContactUs, Testimonies  } from './components';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Home />
       <WhatWeOffer />
       <HowWeDoIt />
+      <Testimonies />
       <ContactUs />
     </div>
   );

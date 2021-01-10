@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import globalStyles from '../styles/styles.module.scss';
-import { Service, ServiceProps } from './Service';
+import { Testimony, TestimonyProps } from './Testimony';
 import person from "./app.png";
 import bench from "./bench.png";
 
 
-const services : Array<ServiceProps> = [
+const services : Array<TestimonyProps> = [
     {
         action: (event: any) => console.log(event),
         title: "Application development",
@@ -31,17 +31,14 @@ const services : Array<ServiceProps> = [
 ];
     
 
-export const WhatWeOffer = () => {
+export const Testimonies = () => {
 
     return (
         <section className={globalStyles.section}> 
-            <h1 className={globalStyles.sectionMainTitleDark}>What we do</h1>
-            <p className={globalStyles.largeDarkSans}>Kiln Studio is located in London, UK providing its customers branding, website design, web apps, illustrations and documentation among other services.
-            We strive to produce engaging designs and web experiences by working together with our clients through constant communication and understanding of their needs.
-            We pride ourself in following all our projects through from the moment we begin a relationship with our clients up to the delivery of the final product.</p>
+            <h1 className={globalStyles.sectionMainTitleDark}>Testimonies &amp; Case Study</h1>
             <ul className={styles.serviceGroups}>
-             {services.map((service: ServiceProps) => <li className={styles.service}>                 
-                <Service 
+             {services.map((service: TestimonyProps) => <li className={styles.service}>                 
+                <Testimony 
                         action={service.action}
                         title={service.title}
                         text={service.text}

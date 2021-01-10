@@ -1,39 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;700&family=Open+Sans&display=swap');
+@import '../styles/styles.module.scss';
 
-.howWeDoItBackground {
-  position: relative;
-  width: 100%;
-  height: 1024px;
+.section {
+  @extend .sectionFullScreen;
   background: #061C43;
+  position: relative;
+  display: flex;
+  &::after {
+    content: "";
+    width: 100%;
+    flex: 1 1 40%;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/how-we-do-it.png);
+  }
+
 }
 
-.howWeDoItImage{
-  position: absolute ;
-  width: 40%;
-  top: 15%;
-  right: 0px;
+.content {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  margin: 120px 60px 120px 240px;
+  position: relative;
+  width: 50%;
+  flex:  0 0 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.sectionHeader{
-  position: absolute;
-  top: 60px;
-  left: 120px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 42px;
-  line-height: 57px;
-  color: #39A1FF;
-}
+.contentImage {
+  display: flex;
+  position: relative;
 
-.sectionContent{
-  position: absolute;
-  width: 45%;
-  top: 25%;
-  left: 120px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  line-height: 40px;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
 }
