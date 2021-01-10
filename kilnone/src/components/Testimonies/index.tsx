@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './styles.module.scss';
 import globalStyles from '../styles/styles.module.scss';
 import { Testimony, TestimonyProps } from './Testimony';
-import person from "./app.png";
-import bench from "./bench.png";
 
 
 const services : Array<TestimonyProps> = [
@@ -11,21 +9,21 @@ const services : Array<TestimonyProps> = [
         action: (event: any) => console.log(event),
         title: "Application development",
         text: "If functionality is what you are looking for web apps can provide with multi plataform/device solutions.",
-        imageUrl: person,
+        imageUrl: 'https://picsum.photos/420/420?blur=3',
         imageAlt: "Person looking at yellow board with an iPad"
     },
     {
         action: (event: any) => console.log(event),
         title: "Web development",
         text: "Websites can provide full inmersive experiences. Interactive and responsive are the name of the game.",
-        imageUrl: bench,
+        imageUrl: 'https://picsum.photos/420/420?blur=3',
         imageAlt: "Person looking at yellow board with an iPad"
     },
     {
         action: (event: any) => console.log(event),
         title: "Branding",
         text: "Need a complete solution to your image? Our team can appropriately develop an entire concept to suit your needs.",
-        imageUrl: bench,
+        imageUrl: 'https://picsum.photos/420/420?blur=3',
         imageAlt: "Developer working on a computer"
     }
 ];
