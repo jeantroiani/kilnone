@@ -1,25 +1,40 @@
-.contactUsBackground {
-  background-image: url(./contactUsBackground.svg);
-  background-position: bottom left  ;
-  background-repeat: no-repeat;
-  background-size: contain;
+@import '../styles/styles.module.scss';
+
+.section {
+  @extend .sectionFullScreen;
+  background: #FFD77C;
+  position: relative;
+  display: flex;
+  &::after {
+    content: "";
+    width: 100%;
+    flex: 1 1 40%;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-image: url(contact-us-image.png);
+  }
 
 }
 
-.sectionMainTitle {
-  font-size: 42px;
-  font-weight: 400;
-  margin-bottom: 42px;
-  padding: 120px 0 0 120px;
-  color: gray;
+.content {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  margin: 120px 100px 120px 240px;
+  position: relative;
+  width: 50%;
+  flex:  0 0 25%;
+  display: flex;
+  flex-direction: column;
 }
 
-.contactUsForm {
-  width: 300px;
-  margin:0 0 0 120px;
-  padding: 15px;
-  background: rgb(129, 99, 99);
-  border: 1px solid gray;
-  border-radius: 15px;
+.contentImage {
+  display: flex;
+  position: relative;
+}
 
+.form {
+  padding-bottom: 20px;
 }
