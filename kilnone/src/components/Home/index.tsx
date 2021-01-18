@@ -1,4 +1,5 @@
 import styles from './styles.module.scss';
+import globalStyles from '../styles/styles.module.scss';
 
 export const Home = () => {
     return (
@@ -8,6 +9,9 @@ export const Home = () => {
                     <h1 className={styles.mainTitle}>KILN.<span className={styles.logoOne}>one</span></h1>
                     <p className={styles.mainContent}>Crafting your ideas into the web</p>
                     <p className={styles.largeDarkSans}>We are a multidisciplinary group of designers and programmers specialized in modern website design and brand development for your company, service or product.</p>
+                    <div className={styles.actionGroup}>
+                        <button className={globalStyles.button}>Contact us</button>   
+                    </div>             
                 </div>
             </div>
         </div>

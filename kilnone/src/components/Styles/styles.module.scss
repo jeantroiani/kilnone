@@ -116,7 +116,35 @@
   &:hover {
     background-color:  lighten($darkBlue, 16%);
   }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt $lightBlue;
+  }
 }
+
+.link {
+  @extend .sectionContentMediumDarkLight;
+  text-decoration: underline;
+  outline: 0;
+  border: none;
+  &:hover {
+    color:  lighten($darkBlue, 16%);
+  }
+  &:focus {
+    color: $lightBlue;
+  }
+}
+
+.informationContainer {
+  vertical-align: bottom;
+  margin-bottom: 0;
+  height: -webkit-fill-available;
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 
 //todo: find a way to remove this using CSS reset, CRA has some information about it.
 p, h1, h2, h3 {
