@@ -13,6 +13,7 @@
 .title {
   @extend .sectionContentDarkLight;
   text-align: left;
+  font-weight: bold;
 }
 
 .cardAction{
@@ -40,8 +41,13 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  box-sizing: border-box;
   &:hover {
     background-color: $lightGray;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2pt $darkYellow;
   }
 }
 
