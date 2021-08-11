@@ -13,6 +13,16 @@ module.exports = {
         trackingId: "000",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Homenaje\:300,400,700`,
+          `Open Sans\:300,400,700`,
+        ],
+        display: 'swap'
+      }
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
